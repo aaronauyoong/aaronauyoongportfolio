@@ -1,0 +1,275 @@
+:root {
+    --white: #FFFFFF;
+    --gentlered: #d5b4ae;
+    --silverpink: #c4aead;
+    --darkombre:  #988784;
+    --gentleombre: #DDCAC5;
+    --strongombre: #494240;
+    --strongbrown: #523833;
+    --darkgrey:  #6d6d6d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--darkgrey);
+    background-color: var(--gentleombre);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--strongombre);
+}
+
+h1 {
+    font-size: 40px;
+}
+  
+h2 {
+    font-size: 35px;
+}
+  
+h3 {
+    font-size: 30px;
+}
+  
+h4 {
+    font-size: 25px;
+}
+  
+h5 {
+    font-size: 20px;
+}
+  
+h6 {
+    font-size: 15px;
+}
+  
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--gentleombre)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--darkgrey);
+    color: var(--silverpink);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    float: right;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+aside {
+    flex: 1;
+    padding: 80px;
+    text-align: left;
+    float: left;
+}
+article nav {
+    padding-top: 15px;
+    float: right;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+article nav ul {
+    list-style-type: none;
+}
+
+article nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#headercontainer {
+    width: 50%;
+    height: 10%;
+    display: block;
+}
+
+#picturecontainer {
+    width: 50%;
+    height: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mypictures {
+    display: flex;
+    justify-content: center;
+}
+
+.mypictures img {
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 0px 5px 10px;
+    position: relative;
+}
+
+/* above is done. below is still work in progress */
+
+.mainparagraph {
+    flex: 4;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-left: solid 4px var(--strongbrown);
+    margin: 0px;
+}
+
+.maincontainer {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links{
+    color: var(--strongombre);
+    flex-direction: row;
+}
+
+.card {
+    flex: 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: flex-basis 500ms linear;
+}
+
+.cardmain {
+    flex: 0 0 100%;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: flex-basis 500ms linear;
+}
+  
+.card-header {
+    padding: 20px;
+    background-color: var(--darkombre);
+    color: var(--strongombre);
+    border-radius: 20px 20px 0px 0px;
+}
+  
+.workimage {
+    max-width: 100%; 
+    height: auto;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover, .cardmain:hover .workimage {
+    opacity: 0.3;
+}
+
+/* Footer configuration */
+footer {
+    padding: 30px 0px;
+    margin: 30px 0px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 30px 0px;
+    padding: 30px 0px;
+    font-size: 20px;
+    color: var(--strongombre);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+}
+
+@media screen and (min-width:992px) {
+    header{
+        width: 100%;
+    }
+
+    .card-column{
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
