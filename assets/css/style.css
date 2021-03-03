@@ -1,6 +1,6 @@
+/* Colour scheme for portfolio */
 :root {
     --white: #FFFFFF;
-    --gentlered: #d5b4ae;
     --silverpink: #c4aead;
     --darkombre:  #988784;
     --gentleombre: #DDCAC5;
@@ -9,6 +9,7 @@
     --darkgrey:  #6d6d6d;
 }
 
+/* Universal selector for styling all elements */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,6 +28,7 @@ body {
 
 }
 
+/* Generic h1-h6 styling */
 h1, h2, h3, h4, h5, h6 {
     color: var(--strongombre);
 }
@@ -54,21 +56,25 @@ h5 {
 h6 {
     font-size: 15px;
 }
-  
+
+/* Generic paragraph styling */
 p {
     margin-bottom: 10px;
 }
 
+/* Generic link styling */
 a {
     text-decoration: underline;
     color: var(--gentleombre)
 }
 
+/* Generic image styling */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Header attribute styling */
 header {
     padding: 20px;
     margin: 0;
@@ -100,12 +106,14 @@ header nav ul li {
     margin-left: 25px;
 }
 
+/* Aside styling to highlight main sections of the portfolio */
 aside {
     flex: 1;
     padding: 80px;
     text-align: left;
     float: left;
 }
+
 article nav {
     padding-top: 15px;
     float: right;
@@ -123,12 +131,14 @@ article nav ul li {
     margin-left: 25px;
 }
 
+/* ID for header at top of portfolio page */
 #headercontainer {
     width: 50%;
     height: 10%;
     display: block;
 }
 
+/* ID for main image at the top of portfolio page */
 #picturecontainer {
     width: 50%;
     height: 0%;
@@ -137,6 +147,7 @@ article nav ul li {
     display: block;
 }
 
+/* Configs for main picture to be displayed at top of page */
 .mypictures {
     display: flex;
     justify-content: center;
@@ -157,7 +168,15 @@ article nav ul li {
     position: relative;
 }
 
-/* above is done. below is still work in progress */
+/* Styling for main content in portfolio sections */
+.maincontainer {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-between;
+}
 
 .mainparagraph {
     flex: 4;
@@ -171,26 +190,12 @@ article nav ul li {
     margin: 0px;
 }
 
-.maincontainer {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: space-between;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .links{
     color: var(--strongombre);
     flex-direction: row;
 }
 
+/* Card classes to display my work on my portfolio */
 .card {
     flex: 200px;
     padding: 10px;
@@ -252,6 +257,7 @@ footer h2 {
     text-align: center;
 }
 
+/* Configs for smaller devices and screen sizes */
 @media screen and (min-width: 768px) {
     .card-column {
       flex: 0 0 50%;
