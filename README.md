@@ -1,5 +1,6 @@
 # 02 Advanced CSS: Portfolio
 Project Owner - Aaron Au Yoong
+View live link here: https://aaronauyoong.github.io/aaronauyoongportfolio/ 
 
 ## Introduction
 This is a web application created for the purpose of becoming my personal portfolio page, which will be updated as the course progresses. This portfolio page will display my talent and skills as a web developer to potential employers.
@@ -20,3 +21,14 @@ Below are the requirements for this portfolio page:
 Below is a wireframe created for the first version of my portfolio. 
 <br>
 <img src="assets/images/Portfolio Wireframe.png" width="80%">
+
+## Screenshots
+Screenshots of portfolio version 1 are below. 
+<br>
+<img src="assets/images/portfolioscreenshot1.png" width="80%">
+<br>
+<img src="assets/images/portfolioscreenshot2.png" width="80%">
+<br>
+<img src="assets/images/portfolioscreenshot3.png" width="80%">
+<br>
+<img src="assets/images/portfolioscreenshot4.png" width="80%">
