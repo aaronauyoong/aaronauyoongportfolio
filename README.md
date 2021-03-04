@@ -19,8 +19,4 @@ Below are the requirements for this portfolio page:
 ## Wireframe
 Below is a wireframe created for the first version of my portfolio. 
 <br>
-<<<<<<< HEAD
 <img src="assets/images/Portfolio Wireframe.png" width="80%">
-=======
-<img src="assets/images/Portfolio Wireframe.png" width="80%">
->>>>>>> d65611b234079e8d5ea64d1622696f338f44bf6e
