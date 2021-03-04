@@ -16,3 +16,6 @@ Below are the requirements for this portfolio page:
 - Employers can view my deployed work samples. 
 - Employers can assess whether I am a good candidate for an open position in their company. 
 
+## Wireframe
+Below is a wireframe created for the first version of my portfolio. 
+<img src="assets/images/Portfolio Wireframe.png" width="300">
