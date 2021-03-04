@@ -1,6 +1,7 @@
 # 02 Advanced CSS: Portfolio
 Project Owner - Aaron Au Yoong
-View live link here: https://aaronauyoong.github.io/aaronauyoongportfolio/ 
+<br>
+View portfolio live link here: https://aaronauyoong.github.io/aaronauyoongportfolio/ 
 
 ## Introduction
 This is a web application created for the purpose of becoming my personal portfolio page, which will be updated as the course progresses. This portfolio page will display my talent and skills as a web developer to potential employers.
