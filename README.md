@@ -32,4 +32,4 @@ Screenshots of portfolio version 1 are below.
 <br>
 <img src="assets/images/portfolioscreenshot3.png" width="80%">
 <br>
-<img src="assets/images/portfolioscreenshot4.png" width="80%">
+<img src="assets/images/portfolioscreenshot4v2.png" width="80%">
