@@ -4,7 +4,7 @@ Project Owner - Aaron Au Yoong
 View portfolio live link here: https://aaronauyoong.github.io/aaronauyoongportfolio/ 
 
 ## Introduction
-This is a web application created for the purpose of becoming my personal portfolio page, which will be updated as the course progresses. This portfolio page will display my talent and skills as a web developer to potential employers.
+This is a web application created for the purpose of becoming my personal portfolio page, which will be updated as more apps are created. This portfolio page will display my talent and skills as a web developer to potential employers.
 
 ## Technologies
 Technologies used in this portfolio creation include:
@@ -18,18 +18,9 @@ Below are the requirements for this portfolio page:
 - Employers can view my deployed work samples. 
 - Employers can assess whether I am a good candidate for an open position in their company. 
 
-## Wireframe
-Below is a wireframe created for the first version of my portfolio. 
-<br>
-<img src="assets/images/Portfolio Wireframe.png" width="80%">
-
 ## Screenshots
-Screenshots of portfolio version 1 are below. 
-<br>
-<img src="assets/images/portfolioscreenshot1.png" width="80%">
-<br>
-<img src="assets/images/portfolioscreenshot2.png" width="80%">
-<br>
-<img src="assets/images/portfolioscreenshot3.png" width="80%">
-<br>
-<img src="assets/images/portfolioscreenshot4v2.png" width="80%">
+Screenshots of portfolio version 2 are below. 
+![Portfolio Screenshot 1](./assets/images/portfolioscreenshot1-v2.png)
+![Portfolio Screenshot 2](./assets/images/portfolioscreenshot2-v2.png)
+![Portfolio Screenshot 3](./assets/images/portfolioscreenshot3-v2.png)
+![Portfolio Screenshot 4](./assets/images/portfolioscreenshot4-v2.png)
