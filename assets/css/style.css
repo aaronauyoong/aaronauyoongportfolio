@@ -11,11 +11,6 @@
     --strongbrown: #523833;
     --darkgrey:  #6d6d6d;
     --black: #171718;
-
-    /* new colours for portfolio */
-    --midnightblue: #122023;
-    --neonblue: #0AE0DF;
-    --deepseablue: #12a0a0; 
 }
 
 html {
@@ -63,11 +58,6 @@ p {
     font-size: 20px;
 }
 
-a {
-    text-decoration: underline;
-    color: var(--gentleombre)
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -94,12 +84,12 @@ img {
     color: var(--silverpink);
     float: left;
     padding: 12px;
-    width: 25%;
+    width: 33.3%;
     text-align: center;
 }
 
 .nav-links:hover {
-    transition: 1.5s;
+    transition: 1s;
     background-color: var(--silverpink);
     color: var(--darkgrey);
 }
@@ -233,6 +223,11 @@ article nav ul li {
     color: var(--gentleombre);
 }
 
+.id-card-links{ 
+    color: var(--gentleombre);
+    text-decoration: underline;
+}
+
 .id-card-links:hover {
     transition: 1s;
     font-weight: 900;
@@ -253,14 +248,14 @@ article nav ul li {
 .mainparagraph {
     flex: 4;
     padding: 60px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    border-left: solid 4px var(--strongbrown);
-    margin: 0px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .links{
@@ -301,31 +296,30 @@ article nav ul li {
 .workimage {
     max-width: 100%; 
     height: auto;
-    opacity: 0.5;
+    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
+    transition: 0.5s ease;
     backface-visibility: hidden;
 }
 
 .card:hover, .cardmain:hover .workimage {
-    transition: 1.5s;
-    opacity: 0.3;
+    transition: 0.5s;
+    opacity: 0.5;
 }
 
 /* Footer configuration */
 footer {
-    padding: 30px 0px;
-    margin: 30px 0px;
+    padding: 15px 0px;
+    margin: 15px 0px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
 footer h2 {
-    margin: 16px 0px;
-    padding: 16px 0px;
+    margin: 15px 0px;
+    padding: 15px 0px;
     font-size: 20px;
     color: var(--gentleombre);
     text-align: center;
@@ -333,26 +327,28 @@ footer h2 {
 
 footer p {
     font-family: 'Orbitron', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 16px 0px;
-    padding: 16px 0px;
+    margin: 15px 0px;
+    padding: 15px 0px;
     color: var(--gentleombre);
     line-height: 1.6;
 }
 
 .contactBtn {
     font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    cursor: pointer;
     margin: 6px;
     padding: 6px;
     border-radius: 6px;
-    background-color: var(--gentleombre);
-    color: var(--strongombre);
+    color: var(--gentleombre);
+    background-color: var(--strongombre);
+    text-decoration: none;
 }
 
 .contactBtn:hover {
     transition: 0.5s;
-    color: var(--gentleombre);
-    background-color: var(--strongombre);
-    cursor: pointer;
+    font-weight: 900;
+    background-color: var(--gentleombre);
+    color: var(--strongombre);
 }
 
 /* Configs for smaller devices and screen sizes */
