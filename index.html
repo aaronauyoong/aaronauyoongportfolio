@@ -11,33 +11,34 @@
 
 <body>
     <!-- Header section of webpage, contains navigation links -->
-    <header class="headercontainer">
-        <h1>aaron au yoong  //  web developer </h1>
+    <header class="navbar">
         <nav>
-            <ul>
-                <li>
-                    <a href="#About-Me">about me</a>
-                </li>
-                <li>
-                    <a href="#Work">work</a>
-                </li>
-                <li>
-                    <a href="#Contact-Me">contact me</a>
-                </li>
-                <li>
-                    <a href="aaronauyoong.resume" target="_blank">resume</a>
-                </li>
-            </ul>
+            <a class="nav-links" href="#About-Me">about me</a>            
+            <a class="nav-links" href="#Work">work</a>
+            <a class="nav-links" href="#Contact-Me">contact me</a>
+            <a class="nav-links" href="aaronauyoong.resume" target="_blank">resume</a>
         </nav>
     </div>
     </header>
 
     <main>
-        <div id="picturecontainer">
-            <div>
-                <figure class="column">
-                  <img src="./assets/images/Formal Picture.jpg" alt="Image of Aaron Au Yoong 2" style="width:100%">
-                </figure>
+        <div class="personal-id-card">
+            <div class="id-card">
+                <div class="profile-row">
+                    <div class="profilepic">
+                        <div class="pp-arc-outer"></div>
+                        <div class="pp-arc-inner"></div>
+                        <img src="../aaronauyoongportfolio/assets/images/formal-picture.jpg">
+                    </div>
+                    <div class="profiledesc">
+                        <h1>AARON AU YOONG</h1>
+                        <p>WEB DEVELOPER</p>
+                        <p>DESIGNER</p>
+                        <a href="mailto:auyoong.aaron@gmail.com" target="_blank" class="id-card-links">EMAIL</a>
+                        <a href="https://github.com/aaronauyoong" target="_blank" class="id-card-links">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/aaron-au-yoong-a69213142/" target="_blank" class="id-card-links">LINKEDIN</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -55,9 +56,6 @@
                     </p>
                 </div>
             </article>
-            
-            <br>
-            <br>
 
             <article class="maincontainer">
                 <aside>
@@ -98,28 +96,6 @@
                     </figure>
                 </div>
             </article>
-            
-            <br>
-            <br>
-
-            <article class="maincontainer">
-                <aside>
-                    <h2 id="Contact-Me">contact me</h2>
-                </aside>
-                <nav class="mainparagraph">
-                    <ul>
-                        <li>
-                            <a href="mailto:auyoong.aaron@gmail.com" target="_blank" class="links">email</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/aaronauyoong" target="_blank" class="links">github</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/aaron-au-yoong-a69213142/" target="_blank" class="links">linkedin</a>
-                        </li>
-                    </ul>
-                </nav>
-            </article>
 
         </section>
 
@@ -128,7 +104,7 @@
     <footer>
         <h2>Let's connect!</h2>
         <p>Keen on working together? Have any questions? Feel free to contact me, and I will respond as soon as I can.</p>
-        <button>Email</button>
+        <button class="contactBtn">Email</button>
     </footer>
 
     <script src="./assets/js/script.js"></script>

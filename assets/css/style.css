@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 :root {
+    /* initial colour scheme for portfolio */
     --white: #FFFFFF;
     --silverpink: #c4aead;
     --darkombre:  #988784;
@@ -9,12 +10,12 @@
     --strongombre: #494240;
     --strongbrown: #523833;
     --darkgrey:  #6d6d6d;
-}
+    --black: #171718;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* new colours for portfolio */
+    --midnightblue: #122023;
+    --neonblue: #0AE0DF;
+    --deepseablue: #12a0a0; 
 }
 
 html {
@@ -24,22 +25,21 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: var(--darkgrey);
-    background-color: var(--gentleombre);
-
+    background-color: var(--black);
 }
 
 /* Generic h1-h6 styling */
 h1, h2, h3, h4, h5, h6 {
     color: var(--strongombre);
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 34px;
 }
   
 h2 {
-    font-size: 35px;
+    font-size: 32px;
 }
   
 h3 {
@@ -73,35 +73,35 @@ img {
     height: auto;
 }
 
-header {
+/* Navigation bar styling */
+.navbar {
+    width: 100%;
     padding: 20px;
-    margin: 0;
+    display: block;
+    overflow: auto;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--darkgrey);
+    background-color: var(--black);
     color: var(--silverpink);
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-header nav {
-    padding-top: 15px;
-    float: right;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
     font-size: 20px;
-}
-
-header nav ul {
     list-style-type: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+.nav-links {
+    color: var(--silverpink);
+    float: left;
+    padding: 12px;
+    width: 25%;
+    text-align: center;
+}
+
+.nav-links:hover {
+    transition: 1.5s;
+    background-color: var(--silverpink);
+    color: var(--darkgrey);
 }
 
 aside {
@@ -115,7 +115,7 @@ article nav {
     padding-top: 15px;
     float: right;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -128,41 +128,114 @@ article nav ul li {
     margin-left: 25px;
 }
 
-/* ID for header at top of portfolio page */
-#headercontainer {
-    width: 50%;
-    height: 10%;
-    display: block;
-}
-
 /* ID for main image at the top of portfolio page */
-#picturecontainer {
-    width: 50%;
-    height: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/* Configs for main picture to be displayed at top of page */
-.mypictures {
+.personal-id-card {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--strongombre);
     display: flex;
-    justify-content: center;
 }
 
-.mypictures img {
-    justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
+.id-card {
+    border: 2px solid var(--gentleombre);
+    border-radius: 5px;
+    max-width: 720px;
+    margin: auto;
+    color: var(--white);
+    padding: 16px;
+    flex-basis: 100%;
+    background-color: var(--strongombre);
+    box-shadow: 0px 0px 3px 1px var(--silverpink), inset 0px 0px 3px 1px var(--silverpink);
 }
 
-.column {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 0px 5px 10px;
+.profile-row {
+    display: flex;
+}
+
+.profile-row .profilepic {
     position: relative;
+    flex-basis: 33.3%;
+    align-self: center;
+    margin: 24px;
+}
+
+.profile-row .profilepic img {
+    display: block;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 1px var(--silverpink), inset 0px 0px 3px 1px var(--silverpink);
+}
+
+.profile-row .profilepic .pp-arc-outer {
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 6px solid transparent;
+    border-bottom-color: var(--gentleombre);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+
+    animation-duration: 2s;
+    animation-name: rotate-anticlock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-anticlock {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+}
+
+.profile-row .profilepic .pp-arc-inner {
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 6px solid transparent;
+    border-top-color: var(--gentleombre);
+    border-radius: 50%;
+    top: -6px;
+    left: -6px;
+
+    animation-duration: 2s;
+    animation-name: rotate-clock;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+  
+@keyframes rotate-clock {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.profile-row .profiledesc {
+    flex-grow: 66.6%;
+    padding: 16px;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    color: var(--gentleombre);
+    text-shadow: 0px 0px 4px var(--silverpink);
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+}
+
+.profile-row .profiledesc h1, a{
+    margin: 0px;
+    color: var(--gentleombre);
+}
+
+.id-card-links:hover {
+    transition: 1s;
+    font-weight: 900;
 }
 
 /* Styling for main content in portfolio sections */
@@ -173,6 +246,8 @@ article nav ul li {
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: space-between;
+    color: var(--darkgrey);
+    background-color: var(--gentleombre);
 }
 
 .mainparagraph {
@@ -185,6 +260,7 @@ article nav ul li {
     align-items: flex-start;
     border-left: solid 4px var(--strongbrown);
     margin: 0px;
+    line-height: 1.6;
 }
 
 .links{
@@ -225,7 +301,7 @@ article nav ul li {
 .workimage {
     max-width: 100%; 
     height: auto;
-    opacity: 1;
+    opacity: 0.5;
     display: block;
     width: 100%;
     height: auto;
@@ -234,6 +310,7 @@ article nav ul li {
 }
 
 .card:hover, .cardmain:hover .workimage {
+    transition: 1.5s;
     opacity: 0.3;
 }
 
@@ -247,11 +324,35 @@ footer {
 }
 
 footer h2 {
-    margin: 30px 0px;
-    padding: 30px 0px;
+    margin: 16px 0px;
+    padding: 16px 0px;
     font-size: 20px;
-    color: var(--strongombre);
+    color: var(--gentleombre);
     text-align: center;
+}
+
+footer p {
+    font-family: 'Orbitron', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 16px 0px;
+    padding: 16px 0px;
+    color: var(--gentleombre);
+    line-height: 1.6;
+}
+
+.contactBtn {
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--gentleombre);
+    color: var(--strongombre);
+}
+
+.contactBtn:hover {
+    transition: 0.5s;
+    color: var(--gentleombre);
+    background-color: var(--strongombre);
+    cursor: pointer;
 }
 
 /* Configs for smaller devices and screen sizes */
