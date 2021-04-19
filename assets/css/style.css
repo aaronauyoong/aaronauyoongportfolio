@@ -223,6 +223,47 @@ article nav ul li {
     color: var(--gentleombre);
 }
 
+.typewriter-effect {
+    overflow: hidden; /* ensures content is hidden until animation begins */
+    border-right: 4px solid var(--silverpink); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+    typing1 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+    animation-iteration-count: infinite;
+}
+
+/* The typing1 effect */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 63% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--silverpink); }
+}
+
+.typewriter-effect-2 {
+    overflow: hidden; /* ensures content is hidden until animation begins */
+    border-right: 4px solid var(--silverpink); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+    typing2 3.5s steps(35, end),
+    blink-caret .75s step-end infinite;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing2 {
+    from { width: 0 }
+    to { width: 45%; }
+}
+
 .id-card-links{ 
     color: var(--gentleombre);
     text-decoration: underline;
