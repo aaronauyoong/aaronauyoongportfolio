@@ -1,4 +1,4 @@
-# 02 Advanced CSS: Portfolio
+# Aaron Au Yoong's Portfolio
 Project Owner - Aaron Au Yoong
 <br>
 View portfolio live link here: https://aaronauyoong.github.io/aaronauyoongportfolio/ 
@@ -24,3 +24,6 @@ Screenshots of portfolio version 2 are below.
 ![Portfolio Screenshot 2](./assets/images/portfolioscreenshot2-v2.png)
 ![Portfolio Screenshot 3](./assets/images/portfolioscreenshot3-v2.png)
 ![Portfolio Screenshot 4](./assets/images/portfolioscreenshot4-v2.png)
+
+## License
+Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
