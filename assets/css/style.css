@@ -1,374 +1,485 @@
 /* ORBITRON FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 :root {
-    /* initial colour scheme for portfolio */
-    --white: #FFFFFF;
-    --silverpink: #c4aead;
-    --darkombre:  #988784;
-    --gentleombre: #DDCAC5;
-    --strongombre: #494240;
-    --strongbrown: #523833;
-    --darkgrey:  #6d6d6d;
-    --black: #171718;
+	/* initial colour scheme for portfolio */
+	--white: #ffffff;
+	--silverpink: #c4aead;
+	--darkombre: #988784;
+	--gentleombre: #ddcac5;
+	--ombreshadow: rgb(167, 146, 146);
+	--strongombre: #494240;
+	--strongbrown: #523833;
+	--darkgrey: #6d6d6d;
+	--black: #171718;
 }
 
 html {
-    font-size: 16px;
+	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: var(--black);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: var(--gentleombre);
 }
 
 /* Generic h1-h6 styling */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--strongombre);
-    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--strongombre);
+	font-family: "Orbitron", Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-size: 34px;
+	font-size: 34px;
 }
-  
+
 h2 {
-    font-size: 32px;
+	font-size: 32px;
 }
-  
+
 h3 {
-    font-size: 30px;
+	font-size: 30px;
 }
-  
+
 h4 {
-    font-size: 28px;
+	font-size: 28px;
 }
-  
+
 h5 {
-    font-size: 26px;
+	font-size: 26px;
 }
-  
+
 h6 {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 p {
-    margin-bottom: 10px;
-    font-size: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Navigation bar styling */
 .navbar {
-    width: 100%;
-    padding: 20px;
-    display: block;
-    overflow: auto;
-    display: inline-block;
-    background-color: var(--black);
-    color: var(--silverpink);
-    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    list-style-type: none;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+	width: 100%;
+	padding: 20px;
+	display: block;
+	overflow: auto;
+	display: inline-block;
+	background-color: var(--black);
+	color: var(--silverpink);
+	font-family: "Orbitron", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
 
 .nav-links {
-    color: var(--silverpink);
-    float: left;
-    padding: 12px;
-    width: 33.3%;
-    text-align: center;
+	color: var(--silverpink);
+	float: left;
+	padding: 12px;
+	width: 25%;
+	text-align: center;
 }
 
 .nav-links:hover {
-    transition: 1s;
-    background-color: var(--silverpink);
-    color: var(--darkgrey);
+	transition: 0.5s;
+	background-color: var(--silverpink);
+	color: var(--darkgrey);
 }
 
 aside {
-    flex: 1;
-    padding: 80px;
-    text-align: left;
-    float: left;
+	flex: 1;
+	padding: 80px;
+	text-align: left;
+	float: left;
 }
 
 article nav {
-    padding-top: 15px;
-    float: right;
-    justify-content: center;
-    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
-    font-size: 20px;
+	padding-top: 15px;
+	float: right;
+	justify-content: center;
+	font-family: "Orbitron", Arial, Helvetica, sans-serif;
+	font-size: 20px;
 }
 
 article nav ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 article nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+	display: inline-block;
+	margin-left: 25px;
 }
 
 /* ID for main image at the top of portfolio page */
 .personal-id-card {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--strongombre);
-    display: flex;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--strongombre);
+	display: flex;
 }
 
 .id-card {
-    border: 2px solid var(--gentleombre);
-    border-radius: 5px;
-    max-width: 720px;
-    margin: auto;
-    color: var(--white);
-    padding: 16px;
-    flex-basis: 100%;
-    background-color: var(--strongombre);
-    box-shadow: 0px 0px 3px 1px var(--silverpink), inset 0px 0px 3px 1px var(--silverpink);
+	border: 2px solid var(--gentleombre);
+	border-radius: 5px;
+	max-width: 720px;
+	margin: auto;
+	padding: 16px;
+	flex-basis: 100%;
+	box-shadow: 0px 0px 3px 1px var(--silverpink),
+		inset 0px 0px 3px 1px var(--silverpink);
 }
 
 .profile-row {
-    display: flex;
+	display: flex;
 }
 
 .profile-row .profilepic {
-    position: relative;
-    flex-basis: 33.3%;
-    align-self: center;
-    margin: 24px;
+	position: relative;
+	flex-basis: 33.3%;
+	align-self: center;
+	margin: 24px;
 }
 
 .profile-row .profilepic img {
-    display: block;
-    max-width: 100%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 3px 1px var(--silverpink), inset 0px 0px 3px 1px var(--silverpink);
+	display: block;
+	max-width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 1px var(--silverpink),
+		inset 0px 0px 3px 1px var(--silverpink);
 }
 
 .profile-row .profilepic .pp-arc-outer {
-    position: absolute;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    border: 6px solid transparent;
-    border-bottom-color: var(--gentleombre);
-    border-radius: 50%;
-    top: -10px;
-    left: -10px;
+	position: absolute;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	border: 6px solid transparent;
+	border-bottom-color: var(--gentleombre);
+	border-radius: 50%;
+	top: -10px;
+	left: -10px;
 
-    animation-duration: 2s;
-    animation-name: rotate-anticlock;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-name: rotate-anticlock;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 @keyframes rotate-anticlock {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
 
 .profile-row .profilepic .pp-arc-inner {
-    position: absolute;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    border: 6px solid transparent;
-    border-top-color: var(--gentleombre);
-    border-radius: 50%;
-    top: -6px;
-    left: -6px;
+	position: absolute;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	border: 6px solid transparent;
+	border-top-color: var(--gentleombre);
+	border-radius: 50%;
+	top: -6px;
+	left: -6px;
 
-    animation-duration: 2s;
-    animation-name: rotate-clock;
+	animation-duration: 2s;
+	animation-name: rotate-clock;
 
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
-  
+
 @keyframes rotate-clock {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .profile-row .profiledesc {
-    flex-grow: 66.6%;
-    padding: 16px;
-    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
-    color: var(--gentleombre);
-    text-shadow: 0px 0px 4px var(--silverpink);
-    letter-spacing: 1px;
-    line-height: 2;
-    text-align: center;
+	flex-grow: 66.6%;
+	padding: 16px;
+	font-family: "Orbitron", Arial, Helvetica, sans-serif;
+	color: var(--gentleombre);
+	text-shadow: 0px 0px 4px var(--silverpink);
+	letter-spacing: 1px;
+	line-height: 2;
+	text-align: center;
 }
 
-.profile-row .profiledesc h1, a{
-    margin: 0px;
-    color: var(--gentleombre);
+.profile-row .profiledesc h1,
+a {
+	margin: 0px;
+	color: var(--gentleombre);
 }
 
-.id-card-links{ 
-    color: var(--gentleombre);
-    text-decoration: underline;
+.id-card-links {
+	color: var(--gentleombre);
+	text-decoration: underline;
 }
 
 .id-card-links:hover {
-    transition: 1s;
-    font-weight: 900;
+	transition: 0.5s;
+	font-weight: 900;
 }
 
 /* Styling for main content in portfolio sections */
-.maincontainer {
-    display: flex;
+.main-container {
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	color: var(--darkgrey);
+}
+
+.container-header {
+	display: flex;
+	width: 100%;
+	margin: 20px;
+	justify-content: center;
+}
+
+.underline {
+	padding-bottom: 5px;
+	border-bottom: solid 2px var(--strongombre);
+}
+
+.main-paragraph {
+	flex: 4;
+	padding: 60px;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	align-items: flex-start;
-	align-content: space-between;
-    color: var(--darkgrey);
-    background-color: var(--gentleombre);
+	line-height: 1.6;
+	text-align: justify;
 }
 
-.mainparagraph {
-    flex: 4;
-    padding: 60px;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    line-height: 1.6;
-    text-align: justify;
+.links {
+	color: var(--strongombre);
+	flex-direction: row;
 }
 
-.links{
+.icon {
+    margin: 5px;
+}
+
+.github-link {
+    margin: 5px;
     color: var(--strongombre);
-    flex-direction: row;
+}
+.github-link :hover{
+    border: 3px solid var(--strongombre);
+    border-radius: 5px;
 }
 
 /* Card classes to display my work on my portfolio */
-.card {
-    flex: 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
+.project-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    align-items: center;
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* card section for app name and image */
+.app-main {
+    width: 60%;
+	padding: 10px;
+	text-align: left;
+	order: 1;
+	line-height: 1.6;
+}
+
+.featured {
+	display: inline-block;
+	text-align: left;
+	padding: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: var(--darkombre);
+	color: var(--gentleombre);
+	border-radius: 5px;
+}
+
+/* Image Styling */
+
+.app-image {
+    object-fit: cover;
+	cursor: pointer;
+    margin-top: 10px;
+}
+
+.featured-image {
+	object-fit: cover;
+}
+
+/* Just Colorize Container */
+.img-colorize img {
+	filter: grayscale(100%);
+}
+
+.img-colorize:hover img {
+	transition: 0.2s;
+	filter: grayscale(0);
+}
+
+/* card section for description */
+.app-info {
+    width: 40%;
+	padding: 40px;
+	order: 2;
+	text-align: center;
+	justify-content: center;
+}
+
+.app-description {
+	font-size: medium;
+	width: 100%;
+    min-width: 200px;
+	background-color: var(--strongombre);
+	color: var(--gentleombre);
+	padding: 20px;
+    line-height: 1.6;
+	border-radius: 5px;
+	box-shadow: 2px 2px var(--ombreshadow), 2.5px 2.5px rgb(190, 171, 171),
+		3px 3px rgb(192, 170, 170), 4px 4px rgb(206, 181, 181);
+}
+
+.language-list {
+	margin: 10px;
+}
+
+.language {
+	display: inline-block;
+    background-color: var(--strongombre);
+	color: var(--gentleombre);
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: medium;
+	text-align: center;
+}
+
+
+/* Notable Project Styling */
+.other-projects {
+    margin: 30px;
+}
+
+.projects-list {
+    display: flex;
     flex-wrap: wrap;
-    border-width: 1px;
-    border-radius: 20px;
-    transition: flex-basis 500ms linear;
+    justify-content: center;
 }
 
-.cardmain {
-    flex: 0 0 100%;
-    padding: 10px;
+.project-solo {
+    margin: 30px;
     text-align: center;
-    border-style: solid;
-    flex-wrap: wrap;
-    border-width: 1px;
-    border-radius: 20px;
-    transition: flex-basis 500ms linear;
-}
-  
-.card-header {
-    padding: 20px;
-    flex-basis: 33.3%;
-    background-color: var(--darkombre);
-    color: var(--strongombre);
-    border-radius: 20px 20px 0px 0px;
-}
-  
-.workimage {
-    max-width: 100%; 
-    flex-basis: 66.6%;
-    height: auto;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
+    width: 40%;
+
 }
 
-.card:hover, .cardmain:hover .workimage {
-    transition: 0.5s;
-    opacity: 0.5;
+.small-header {
+    padding: 5px;
 }
 
-/* Footer configuration */
-footer {
-    padding: 15px 0px;
-    margin: 15px 0px;
-    clear: both;
-    text-align: center;
-}
-
-footer h2 {
-    margin: 15px 0px;
-    padding: 15px 0px;
-    font-size: 20px;
-    color: var(--gentleombre);
-    text-align: center;
-}
-
-footer p {
-    font-family: 'Orbitron', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 15px 0px;
-    padding: 15px 0px;
-    color: var(--gentleombre);
+.small-desc {
+    padding: 5px;
     line-height: 1.6;
 }
 
+/* Footer configuration */
+.footer {
+	background-color: var(--black);
+	padding: 15px 0px;
+	margin: 15px 0px;
+	clear: both;
+	text-align: center;
+}
+
+.footer h2 {
+	margin: 15px 0px;
+	padding: 15px 0px;
+	font-size: 20px;
+	color: var(--gentleombre);
+	text-align: center;
+}
+
+.footer p {
+	font-family: "Orbitron", "Trebuchet MS", "Lucida Sans Unicode",
+		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	margin: 15px 0px;
+	padding: 15px 0px;
+	color: var(--gentleombre);
+}
+
+.credits p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    font-style: italic
+}
+
 .contactBtn {
-    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    margin: 6px;
-    padding: 6px;
-    border-radius: 6px;
-    color: var(--gentleombre);
-    background-color: var(--strongombre);
-    text-decoration: none;
+	font-family: "Orbitron", Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	margin: 6px;
+	padding: 6px;
+	border-radius: 6px;
+	color: var(--gentleombre);
+	background-color: var(--strongombre);
+	text-decoration: none;
 }
 
 .contactBtn:hover {
-    transition: 0.5s;
-    font-weight: 900;
-    background-color: var(--gentleombre);
-    color: var(--strongombre);
+	transition: 0.5s;
+	font-weight: 900;
+	background-color: var(--gentleombre);
+	color: var(--strongombre);
 }
 
 /* Configs for smaller devices and screen sizes */
 @media screen and (min-width: 768px) {
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-
+	.card-column {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 }
 
-@media screen and (min-width:992px) {
-    header{
-        width: 100%;
-    }
+@media screen and (min-width: 992px) {
+	header {
+		width: 100%;
+	}
 
-    .card-column{
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
+	.card-column {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
 }
